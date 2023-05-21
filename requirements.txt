@@ -1,0 +1,7 @@
+streamlit~=1.22.0
+streamlit-chat
+transformers~=4.29.2
+translate~=3.6.1
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch
+nltk~=3.8.1
