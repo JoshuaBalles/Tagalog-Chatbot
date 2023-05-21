@@ -50,7 +50,10 @@ foul_words = [
     "tamod", "tang ina", "tanga", "tangina", "taragis",
     "tarantado", "tete", "teti", "timang", "tinil",
     "tite", "titi", "tubol", "tungaw", "ulol",
-    "ulul", "ungas", "utong"]
+    "ulul", "ungas", "utong", "bayag", "pisteng yawa",
+    "tang ina", "pota", "chupa", "hindut", "jakol",
+    "tikol", "letse", "pekpek", "pek pek", "salsal",
+    "shet", "yawa"]
 
 
 # Function to filter out foul words
