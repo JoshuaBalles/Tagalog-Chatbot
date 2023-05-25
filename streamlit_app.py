@@ -64,7 +64,10 @@ def filter_sentence(sentence):
     filtered_words = []
 
     # Iterate over each word in the tokenized sentence
-    for word in words:
+    index = 0
+    while index < len(words):
+        word = words[index]
+
         # Check if the word is in the foul words list
         if word.lower() in foul_words:
             # If the word is a bad word, replace it with asterisks of the same length
@@ -72,6 +75,17 @@ def filter_sentence(sentence):
         else:
             # If the word is not a bad word, keep it as it is
             filtered_words.append(word)
+
+        # Check if the next word forms a phrase with a foul word
+        next_index = index + 1
+        if next_index < len(words):
+            next_word = words[next_index]
+            phrase = f"{word.lower()} {next_word.lower()}"
+            if phrase in foul_words:
+                filtered_words[-1] = '*' * len(phrase)
+                index += 1
+
+        index += 1
 
     # Join the filtered words back into a sentence
     filtered_sentence = ' '.join(filtered_words)
