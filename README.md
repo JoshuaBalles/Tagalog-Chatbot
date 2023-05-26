@@ -20,7 +20,7 @@ Additionally, download the required NLTK resources by running the following comm
 ## Usage
 
 To run the chatbot, execute the following command:
-`streamlit run chatbot.py` 
+`streamlit run streamlit_app.py` 
 
 This will start a Streamlit app and open it in your web browser. The app will display a chat interface where you can interact with the chatbot.
 
